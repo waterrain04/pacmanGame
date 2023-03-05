@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pac-man</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./script/script.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="info">
+      <ul>
+        <li>Use the arrow keys or WASD keys to move Pac-Man in the corresponding direction: up, down, left, or right.
+        </li>
+        <li>Eat all the orange pellets on the screen to complete each level.</li>
+        <li>Avoid the ghosts that chase Pac-Man, as they can kill him.</li>
+        <li>Eat power pellets to turn the ghosts blue and temporarily make them vulnerable to being eaten by Pac-Man.
+        </li>
+        <li>Eat fruit and other bonuses for extra points."</li>
+        <li>Score 274 points to win the game!"</li>
+      </ul>
+      <button class="x">X</button>
+    </div>
+    <div class="how">HOW TO PLAY</div>
+    <div class="wrapper"></div>
+    <div class="back">BACK</div>
+    <div class="title">
+      <h1>PACMAN GAME</h1>
+      <p>Pac-Man is a classic arcade game released in 1980 by Namco. The game was designed by Toru Iwatani and features the iconic character of Pac-Man, a yellow, circular character who eats pellets while avoiding four ghosts. The game became a cultural phenomenon and helped to establish video games as a mainstream form of entertainment.
+<br><br>
+        Pac-Man's popularity was due to its addictive gameplay and colorful graphics, which kept players coming back for more. The game's iconic characters, such as Pac-Man and the four ghosts, have become instantly recognizable and have spawned numerous sequels, merchandise, and even a cartoon show. Today, Pac-Man remains a beloved classic and has been ported to numerous platforms, including modern consoles and mobile devices. Its enduring popularity is a testament to its timeless gameplay and iconic characters, and it continues to be enjoyed by fans around the world.</p>
+    </div>
+    <div class="container">
+    <h3>Score:<span id="score"></span></h3>
+    <div class="buttons">
+      <button class="start">START</button>
+      <button class="pause">PAUSE</button>
+      <button class="restart">RESTART</button>
+    </div>
+    <div class="gameOver">GAME OVER</div>
+    <div class="grid">
+    </div>
+    </div>
+    <audio  id="start" controls  loop src="startgame.mp3" style="display: none;">
+      <audio  id="eat_f" controls   src="eating_fruit.mp3" style="display: none;">
+      <audio  id="eat" controls   src="eating.mp3" style="display: none;">
+      <audio  id="ghost" controls src="GhostSiren.mp3" style="display: none;">
+  </body>
+</html>

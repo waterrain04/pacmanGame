@@ -1,0 +1,186 @@
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body{
+  margin: 0;
+  height: 100vh;
+  font-family: 'VT323', monospace;
+  color: blue;
+}
+.grid {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 560px;
+  height: 560px;
+  border: solid black;
+  background-color: black;
+}
+
+.grid div {
+  width: 20px;
+  height: 20px;
+}
+
+.pac-dot {
+  background-color: orange;   
+  border: 5px solid black;
+  box-sizing: border-box;
+}
+
+.wall {
+outline: blue 1px solid;
+background-color: black;
+}
+
+.power-pellet {
+  background-image: url(buff.png) ;
+  background-position: center;
+  background-size: cover;  border-radius: 10px;
+}
+
+.blinky {
+  background-image: url(blue.png) ;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.pinky {
+  background-image: url(yellow.png) ;
+  background-position: center;
+  background-size: cover;}
+
+.inky {
+  background-image: url(red.png) ;
+  background-position: center;
+  background-size: cover;}
+
+.clyde {
+  background-image: url(pinky.png) ;
+  background-position: center;
+  background-size: cover;
+}
+
+.pac-man {
+  background-image: url(pacman.png) ;
+  background-position: center;
+  background-size: cover;  border-radius: 10px;
+}
+
+.scared-ghost {
+  background-image: url(blue.png) ;
+  background-position: center;
+  background-size: cover;}
+.container{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-70%, -50%);
+}
+
+.title{
+  position: absolute;
+  top: 50px;
+  right: 150px;
+  width: 500px; 
+  border: 5px solid blue;
+  text-align: center;
+  padding: 20px;
+}
+.title h1{
+  padding-top: 0;
+  color: blue;
+  font-size: 3rem;
+  letter-spacing: 10px;
+}
+.title p{
+color: blue;
+font-size: 1.5rem;
+letter-spacing: 3px;
+line-height: 25px;
+}
+
+.back{
+  position: absolute;
+  left: 100px;
+  top: 50px;
+  padding: 20px 40px;
+  font-size: 2rem;
+  letter-spacing: 10px;
+  border: 5px solid blue;
+  font-weight: 900;
+}
+
+.wrapper{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url(pacman.gif);
+  -webkit-background-size:cover;
+  background-position: center center;
+  overflow: hidden;
+  filter: blur(20px);
+  z-index: -2;
+  
+}
+.buttons{
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.buttons>button{
+  flex: 1;
+  color: blue;
+  padding:20px;
+  border: 5px solid blue;
+  background-color: transparent;
+}
+h3{
+  text-align: center;
+  font-size: 3rem;
+}
+
+.how{
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  text-align: center;
+  border: 5px solid blue;
+  padding: 1rem;
+  width: 120px;
+  font-size: 1.5rem;
+  text-align: left;
+}
+.info{
+  display: none;
+  position: absolute;
+  top: 280px;
+  left: 50px;
+  border: 5px solid blue;
+  background-color: black;
+  padding: 1rem;
+  width: 400px;
+  height: 400px;
+  font-size: 1.5rem;
+  text-align: left;
+  line-height: 20px;
+  letter-spacing: 3px;
+}
+.info button{
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+.gameOver{
+  display: none;
+  position:absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  font-size: 3rem;
+  color: blue;
+  background-color: black;
+  z-index: 10;
+  text-align: center;
+}
